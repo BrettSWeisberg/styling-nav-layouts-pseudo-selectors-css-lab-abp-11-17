@@ -81,9 +81,8 @@ RSpec.describe "Styling Links with Pseudo Selectors and IDs for Hover States" do
   it 'gives links with class btn into blue button pills with a hover state via "div.questions a.btn:hover"' do
     css = parse_css_from_file("./style.css")
     a_btn = css["div.questions a.btn:hover"]
-earn
-    expect(a_btn).to_not be_nil
     binding.pry
+    expect(a_btn).to_not be_nil
     expect(a_btn["background-color"]).to match(/#0069d9/i)
     expect(a_btn["border-color"]).to match(/#0069d9/i)
   end
