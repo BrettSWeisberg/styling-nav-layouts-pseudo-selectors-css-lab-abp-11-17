@@ -83,6 +83,7 @@ RSpec.describe "Styling Links with Pseudo Selectors and IDs for Hover States" do
     a_btn = css["div.questions a.btn:hover"]
 earn
     expect(a_btn).to_not be_nil
+    binding.pry
     expect(a_btn["background-color"]).to match(/#0069d9/i)
     expect(a_btn["border-color"]).to match(/#0069d9/i)
   end
